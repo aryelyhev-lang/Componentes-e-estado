@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -66,10 +67,16 @@ fun BasicComponentsScreen(modifier: Modifier = Modifier) {
             text = "com Jetpack compose",
             fontSize = 16.sp,
             fontWeight = FontWeight.SemiBold,
-            color = Color(66, 133, 255),
+            color = Color(66, 133, 244),
             fontFamily = Righteous,
             modifier = Modifier
                 .align(Alignment.CenterHorizontally)
+        )
+
+        TextField(
+            value = "Android",
+            onValueChange = {},
+            modifier = Modifier.fillMaxWidth()
         )
 
         AndroidEnemy(
