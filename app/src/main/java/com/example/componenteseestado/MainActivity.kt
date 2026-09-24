@@ -372,13 +372,13 @@ fun BasicComponentsScreen(modifier: Modifier = Modifier) {
 
             }
 
-            // Botão que não possui cir de fundo
+            // Botão que não possui cor de fundo
             OutlinedButton(
                 onClick = {
-                    corDeFundo = Color.LightGray
+                    corDeFundo = Color(210, 180, 235)
                 }
             ) {
-                Text(text = "Criar conta")
+                Text(text = "Mudar cor")
             }
         }
     }
